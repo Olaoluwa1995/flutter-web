@@ -1,4 +1,4 @@
-# the_basics
+# flutter_web
 
 A new Flutter project.
 
