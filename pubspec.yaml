@@ -26,8 +26,7 @@ flutter:
 
   assets:
     - assets/images/shape.png
-    - assets/images/logo.jpeg
-    - assets/images/splash_logo.png
+    - assets/images/logo.png
 
   fonts:
     - family: Ubuntu
@@ -42,5 +41,5 @@ flutter:
         - asset: assets/fonts/Ubuntu-Regular.ttf
 
 flutter_native_splash:
-  image: "assets/images/splash_logo.png"
+  image: "assets/images/logo.png"
   color: "ffffff"
