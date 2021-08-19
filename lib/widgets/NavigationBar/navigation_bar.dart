@@ -12,8 +12,7 @@ class NavigationBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           SizedBox(
-            height: 80,
-            width: 150,
+            width: 80,
             child: Image.asset('images/logo.jpeg'),
           ),
           Row(
@@ -43,7 +42,7 @@ class _NavBarItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       title,
-      style: TextStyle(fontSize: 18),
+      style: const TextStyle(fontSize: 18),
     );
   }
 }
