@@ -15,7 +15,7 @@ class NavigationBar extends StatelessWidget {
             height: 60,
             width: 60,
             child: Image.asset(
-              'images/logo.png',
+              'assets/images/logo.png',
               fit: BoxFit.cover,
             ),
           ),
