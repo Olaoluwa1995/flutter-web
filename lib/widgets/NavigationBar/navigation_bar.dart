@@ -1,52 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_builder/responsive_builder.dart';
+import 'package:the_basics/widgets/NavigationBar/navigation_bar_mobile.dart';
+import 'package:the_basics/widgets/NavigationBar/navigation_bar_tablet_desktop.dart';
 
 class NavigationBar extends StatelessWidget {
-  const NavigationBar({
-    Key? key,
-  }) : super(key: key);
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      height: 100,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: <Widget>[
-          SizedBox(
-            height: 60,
-            width: 60,
-            child: Image.asset(
-              'assets/images/logo.png',
-              fit: BoxFit.cover,
-            ),
-          ),
-          Row(
-            mainAxisSize: MainAxisSize.min,
-            children: const <Widget>[
-              _NavBarItem('Episodes'),
-              SizedBox(
-                width: 60,
-              ),
-              _NavBarItem('About'),
-            ],
-          )
-        ],
-      ),
-    );
-  }
-}
-
-class _NavBarItem extends StatelessWidget {
-  final String title;
-  const _NavBarItem(
-    this.title, {
-    Key? key,
-  }) : super(key: key);
+  const NavigationBar({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      title,
-      style: const TextStyle(fontSize: 18),
+    return ScreenTypeLayout(
+      mobile: const NavigationBarMobile(),
+      tablet: const NavigationBarTabletDesktop(),
     );
   }
 }
