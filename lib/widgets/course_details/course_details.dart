@@ -15,11 +15,11 @@ class CourseDetails extends StatelessWidget {
       double titleSize =
           sizingInformation.deviceScreenType == DeviceScreenType.mobile
               ? 50
-              : 80;
+              : 70;
       double descriptionSize =
           sizingInformation.deviceScreenType == DeviceScreenType.mobile
               ? 16
-              : 21;
+              : 20;
       return SizedBox(
         width: 600,
         child: Column(
